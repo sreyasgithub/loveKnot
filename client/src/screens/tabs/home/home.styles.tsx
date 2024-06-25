@@ -1,0 +1,176 @@
+import {Dimensions, StyleSheet} from 'react-native';
+import colors from '../../../assets/colors';
+import globalStyles from '../../../assets/globalStyles';
+
+const styles = StyleSheet.create({
+  coverWrapper: {
+    elevation: 10,
+    shadowColor: colors.black,
+    shadowOffset: {width: 5, height: 5},
+    shadowRadius: 8,
+    shadowOpacity: 8,
+    height: Dimensions.get('window').width - 40,
+    borderRadius: 20,
+  },
+  cover: {
+    width: '100%',
+    height: '100%',
+    borderRadius: 20,
+  },
+  editIcon: {position: 'absolute', bottom: 60, left: 20},
+  nameStrap: {
+    backgroundColor: colors.white,
+    position: 'absolute',
+    bottom: 20,
+    left: 0,
+    right: 0,
+  },
+  name: {
+    fontSize: 12,
+    fontFamily: 'Montserrat-Medium',
+    color: colors.black,
+  },
+  therapistCard: {
+    elevation: 2,
+    backgroundColor: colors.white,
+    borderRadius: 10,
+    width: Dimensions.get('window').width / 1.6,
+    marginRight: 20,
+    marginVertical: 5,
+    ...globalStyles.flexRow,
+  },
+  therapistPhotoWrapper: {
+    width: '40%',
+    height: 70,
+    marginRight: 10,
+  },
+  therapistPhoto: {
+    width: '100%',
+    height: '100%',
+    borderTopLeftRadius: 10,
+    borderBottomLeftRadius: 10,
+  },
+  therapistName: {
+    fontSize: 10,
+    fontFamily: 'Montserrat-Medium',
+    color: colors.black,
+  },
+  therapistRole: {
+    fontSize: 10,
+    fontFamily: 'Montserrat-Medium',
+    color: colors.grey.shade2,
+  },
+  therapistLocation: {
+    fontSize: 10,
+    fontFamily: 'Montserrat-Medium',
+    color: colors.grey.shade1,
+  },
+  viewAllBtn: {
+    backgroundColor: colors.white,
+    width: 70,
+    height: 70,
+    borderRadius: 100,
+    elevation: 4,
+    marginTop: 5,
+    marginRight: 20,
+    ...globalStyles.flexRowCenter,
+  },
+  viewAllLabel: {
+    fontSize: 10,
+    color: colors.accent,
+    fontFamily: 'Montserrat-Regular',
+  },
+  specialDayCard: {
+    height: 80,
+    ...globalStyles.flexRow,
+    elevation: 5,
+    backgroundColor: colors.white,
+    borderRadius: 10,
+  },
+  sdDateWrapper: {
+    backgroundColor: colors.primary,
+    padding: 10,
+    borderTopLeftRadius: 10,
+    borderBottomLeftRadius: 10,
+    marginRight: 10,
+    height: '100%',
+  },
+  sdDate: {
+    fontSize: 20,
+    fontFamily: 'Montserrat-Medium',
+    color: colors.white,
+    textAlign: 'center',
+  },
+  specialDay: {
+    fontSize: 14,
+    fontFamily: 'Montserrat-Medium',
+    color: colors.grey.shade1,
+  },
+  daysLeft: {
+    fontSize: 10,
+    fontFamily: 'Montserrat-Medium',
+    color: colors.red,
+  },
+  iconLabelWrapper: {
+    elevation: 2,
+    backgroundColor: colors.white,
+    width: '48%',
+    height: 70,
+    borderRadius: 10,
+    ...globalStyles.flexColCenter,
+    padding: 5,
+  },
+  smLabel: {
+    fontSize: 10,
+    fontFamily: 'Montserrat-Medium',
+    color: colors.black,
+    textAlign: 'center',
+  },
+  featuresWrapper: {
+    backgroundColor: colors.secondary,
+    height: 222,
+    borderRadius: 10,
+    padding: 10,
+    paddingVertical: 20,
+  },
+  msgNote: {
+    backgroundColor: '#FFFEDA',
+    height: 100,
+    borderRadius: 10,
+    padding: 10,
+    elevation: 2,
+  },
+  msg: {
+    fontSize: 10,
+    fontFamily: 'Montserrat-Medium',
+    color: colors.black,
+    // textDecorationLine: 'underline',
+    // textDecorationColor: colors.grey.shade3,
+    // textDecorationStyle: 'solid',
+  },
+  msgBy: {
+    fontSize: 10,
+    fontFamily: 'Montserrat-Medium',
+    color: colors.primary,
+    position: 'absolute',
+    bottom: 10,
+    right: 10,
+  },
+  feartureIconWrapper: {
+    backgroundColor: colors.white,
+
+    borderRadius: 100,
+    ...globalStyles.flexRowCenter,
+    elevation: 4,
+  },
+  featureLabel: {
+    fontSize: 10,
+    fontFamily: 'Montserrat-Medium',
+    color: colors.black,
+    marginTop: 5,
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+});
+
+export default styles;
